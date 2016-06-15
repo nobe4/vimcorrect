@@ -1,0 +1,58 @@
+*vimcorrect.txt* Enhance the vim correct mechanism
+
+                  _                                        _   ~
+                 (_)                                      | |  ~
+           __   ___ _ __ ___   ___ ___  _ __ _ __ ___  ___| |_ ~
+           \ \ / / | '_ ` _ \ / __/ _ \| '__| '__/ _ \/ __| __|~
+            \ V /| | | | | | | (_| (_) | |  | | |  __/ (__| |_ ~
+             \_/ |_|_| |_| |_|\___\___/|_|  |_|  \___|\___|\__|~
+                                                     ~
+
+================================================================================
+CONTENTS                                                   *vimcorrect-content*
+
+    1. Usage ............ |vimcorrect-usage|
+    2. License .......... |vimcorrect-license|
+    3. Contributing ..... |vimcorrect-contributing|
+
+================================================================================
+USAGE                                                        *vimcorrect-usage*
+
+Simply use the command : >
+
+    :Correct
+
+It will open a new split which is the main interface : >
+
+  ________________
+  |    |         |
+  |    |         |
+  | 1  |    2    |
+  |    |         |
+  |    |         |
+  |____|_________|
+
+  1: Spelling suggestions, with mappings to actions
+  2: Original buffer with corrected text
+
+You have different mappings available:
+
+ `<CR>`  Correct with word under cursor
+   `n`   Go to the next non-corrected word
+   `N`   Go to the previous non-corrected element
+   `q`   Quit the function
+
+================================================================================
+LICENSE                                                    *vimcorrect-license*
+
+Authors: Victor Haffreingue <http://nobe4.fr>
+License: Same terms as Vim itself (see |license|)
+
+================================================================================
+CONTRIBUTING                                          *vimcorrect-contributing*
+
+You can find the github repository here :
+    <https://github.com/nobe4/vimcorrect>
+Feel free to question us with an issue
+
+" vim:tw=78:et:ft=help:norl:
