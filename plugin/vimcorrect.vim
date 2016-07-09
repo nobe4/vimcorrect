@@ -37,7 +37,7 @@ function! s:CorrectCurrentWord()
 
   execute winnr("$") . "wincmd w"
 
-  execute 's/\%'.line('.').'l'.'\%'.col('.').'c'.s:current_word.'/'.l:correct_word
+  execute 'normal! ce'.l:correct_word."\<ESC>"
 
   execute "1 wincmd w"
 endfunction
